@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: azure;
+}
+#root {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 500px;
+    margin: auto;
+    padding: 1rem .5rem;
+   
+}
+button {
+    user-select: none;
+}
+.title {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    width: 50%;
+}
+.completed_task h3{
+    border-left: 2px solid lightgreen;
+    padding-left: 2rem;
+}
+.task_container {
+    max-height: 350px;
+    overflow-y: scroll;
+}
+.task_container .task{
+   width: 80%;
+   margin: auto;
+   position: relative;
+   margin-block: 1rem;
+   background-color: #fff;
+   padding-inline: 1rem;
+   padding-block: .01rem .4rem;
+   box-shadow: 0 0 1rem rgba(0, 0, 0, .3);
+   border-radius: .2rem;
+}
+.task .task_note {
+    text-align: left;
+    display: flex;
+    align-items: start;
+    justify-content: left;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: .8rem;
+}
+.buttons {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 80px;
+}
+.input {
+    width: 80%;
+    margin: auto;
+}
+#some_text {
+    width: 100%;
+    padding: .2rem .5rem;
+}
